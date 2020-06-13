@@ -1,0 +1,25 @@
+PODS:
+  - LYViewKit (0.1.0):
+    - LYViewKit/CoverView (= 0.1.0)
+  - LYViewKit/CoverView (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LYViewKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LYViewKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYViewKit: f846163244c840b0ede7321a2aa7a5817d316930
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 6bb7cfe948ceb3becd2e3031815665b05101fc24
+
+COCOAPODS: 1.9.3

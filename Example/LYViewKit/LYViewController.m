@@ -7,8 +7,11 @@
 //
 
 #import "LYViewController.h"
+#import <LYViewKit/LYViewKit.h>
+#import "LYAlertView.h"
 
 @interface LYViewController ()
+@property (nonatomic, strong) UIButton *addBtn;
 
 @end
 
@@ -17,7 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.addBtn = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [self.addBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.addBtn];
+}
+
+- (void)btnClick {
+    LYAlertView *alertView = [LYAlertView showInView:self.view];
+    alertView.touchDidDismiss = ^{
+        NSLog(@"====>");
+    };
+}
+
+- (void)viewDidLayoutSubviews {
+    self.addBtn.center = self.view.center;
 }
 
 - (void)didReceiveMemoryWarning

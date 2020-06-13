@@ -1,0 +1,6 @@
+framework module LYViewKit {
+  umbrella header "LYViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

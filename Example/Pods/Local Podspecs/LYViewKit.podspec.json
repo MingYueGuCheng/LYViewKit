@@ -1,0 +1,32 @@
+{
+  "name": "LYViewKit",
+  "version": "0.1.0",
+  "summary": "LYViewKit SDK.",
+  "homepage": "https://github.com/yyly/LYViewKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yyly": "wulang@u51.com"
+  },
+  "source": {
+    "git": "https://github.com/yyly/LYViewKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LYViewKit/Classes/LYViewKit.h",
+  "subspecs": [
+    {
+      "name": "CoverView",
+      "source_files": "LYViewKit/Classes/CoverView/**/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    }
+  ]
+}
