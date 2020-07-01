@@ -19,6 +19,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'LYViewKit'
 ```
+```or
+pod 'LYViewKit/CoverView'
+```
 
 ## Author
 
